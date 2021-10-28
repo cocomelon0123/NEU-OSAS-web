@@ -1,0 +1,266 @@
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175187642-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175187642-1');
+</script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://neu.edu.ph/main/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NEU OSAS CMS</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/import/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/import/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/import/ionicons.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/import/animate.css">
+  <!-- Header css -->
+  <link rel="stylesheet" href="header.css">
+  <!-- Footer css -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/footer.css">
+  <!-- Page css -->
+  <link rel="stylesheet" href="https://neu.edu.ph/main/assets/css/home.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+</head>
+<body class="scrollbar scrollbar-primary">
+
+
+
+<section id="navbar-header" data-spy="affix">
+<!-- <div class="header-bar btn-group">
+          <a href="http://automate.neu.edu.ph" type="button" class="btn header-bar-btn">Automate</a>
+          
+          <a href="https://neu.edu.ph/main/vlelinks.php" type="button" class="btn header-bar-btn">VLE</a>
+          <a href="#" type="button" class="btn header-bar-btn">E-Library</a>
+
+  </div> -->
+
+                </li>
+		
+  <div class="row header-logo">
+    <div class="container-fluid">
+		<h1 style="font-size:10%;">
+<!--		<a href="https://neu.edu.ph/main/automatelinks.php" target="_blank" style="font-size: 15px; font-weight: bold;color: #FFFFFF; background-color: #1B1B1B">&nbsp;&nbsp;AUTOMATE &nbsp;&nbsp;</a>
+	   <a href="https://neuvle.neu.edu.ph" target="_blank" style="font-size: 15px; font-weight: bold;color: #FCFCFC; background-color: #1B1B1B;">&nbsp;&nbsp;NEUVLE&nbsp;&nbsp;</a> -->
+      
+		</h1>
+     	 <img src="https://neu.edu.ph/main/assets/images/NEU_header_logo_new.png" class="img-responsive"> 		
+    </div>
+	  
+  </div>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#neu-navbar">
+			
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>	
+      </div>
+      <div class="collapse navbar-collapse" id="neu-navbar">
+        <ul class="nav navbar-nav">
+          <li><a  class="home-nav-btn" href="index.html">Home</a></li>
+          <li><a  class="about-nav-btn" href="https://neu.edu.ph/main/index.php/about">About</a></li>
+         
+          <li ><a  class="news-nav-btn" href="Login.php">Login</a></li>
+      </div>
+    </div>
+  </nav>
+
+<script src="https://neu.edu.ph/main/assets/js/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="https://neu.edu.ph/main/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://neu.edu.ph/main/assets/js/jquery.lazy.min.js"></script>
+<script>
+$(document).ready(function(){
+  if($(window).width()> 767){
+    $('.nav-dropdown').hover(function(){
+      $(this).children('ul').stop().slideToggle(150);
+    });
+  }
+  var uri_1 =  '' ;
+  switch(uri_1){
+          case "": $('.home-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+          case "about": $('.about-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+          case "admission": $('.admission-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+          case "academics": $('.academics-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+          case "news": $('.news-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+          case "aseanstudies": $('.aseanstudies-nav-btn').css('border-bottom','7px solid #0066FF'); break;
+  }
+});
+$(function() {
+        $(".lazy").Lazy();
+});
+</script>
+
+<script>
+var scroll = 0, ann_scroll = 0, max = 0, ann_max = 0, ctr =0, ann_ctr = 0, ann_flag = 0, numOfPosts;
+$(document).ready(function() {
+change_scroll_height();
+        
+        $('.next-event-btn').click(function(){   
+                ctr = ctr + scroll;
+                if(ctr > max){
+                        ctr = max;
+                }
+                $('.event-posts').animate({
+                        scrollTop: ctr
+                    }, 350);
+        });
+        $('.back-event-btn').click(function(){  
+                ctr = ctr - scroll;
+                if(ctr <0){
+                        ctr = 0;
+                }
+                $('.event-posts').animate({
+                        scrollTop: ctr
+                }, 350);
+        });
+        $('.back-ann-btn').click(function(){  
+                if(ann_flag > 0) {
+                        $(".ann-post").animate({right: '-='+ ann_ctr});
+                        ann_flag--;
+                }
+        });
+        $('.next-ann-btn').click(function(){ 
+                if(ann_flag < numOfPosts-2) {
+                        $(".ann-post").animate({right: '+='+ ann_ctr});
+                        ann_flag++;
+                }
+        });
+        
+        $(window).resize(function () {
+                change_scroll_height();
+        });
+        
+        $('#annCarousel').carousel({
+          interval: 4000
+        })
+        
+        $('#annCarousel .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+          
+          for (var i=0;i<2;i++) {
+            next=next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+                }
+            
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+        
+        /*$(".gallery").mouseenter(function(){
+                $(this).find("img").css("filter","brightness(40%)");
+                $(this).find("div").css("background","#0066FF");
+                $(this).find("div").animate({
+                    bottom: '40%',
+                    width: '50%'
+                },300);
+        });
+        $(".gallery , .gallery div").mouseleave(function(){
+                $(this).find("img").css("filter","brightness(100%)");
+                $(this).find("div").css("background","rgba(24, 24, 24,0.8)");
+                $(this).find("div").animate({
+                    bottom: '0%',
+                    width: '100%'
+                },300);
+        });*/
+        var $myCarousel = $('#homeCarousel');
+
+        // Initialize carousel
+        $myCarousel.carousel();
+        function doAnimations(elems) {
+          var animEndEv = 'webkitAnimationEnd animationend';
+        
+          elems.each(function () {
+            var $this = $(this),
+                $animationType = $this.data('animation');
+        
+            // Add animate.css classes to
+            // the elements to be animated
+            // Remove animate.css classes
+            // once the animation event has ended
+            $this.addClass($animationType).one(animEndEv, function () {
+              $this.removeClass($animationType);
+            });
+          });
+        }
+        
+        // Select the elements to be animated
+        // in the first slide on page load
+        var $firstAnimatingElems = $myCarousel.find('.carousel-item:first')
+          .find('[data-animation ^= "animated"]');
+        
+        // Apply the animation using the doAnimations()function
+        doAnimations($firstAnimatingElems);
+        
+        // Attach the doAnimations() function to the
+        // carousel's slide.bs.carousel event
+        
+        $myCarousel.on('slide.bs.carousel', function (e) {
+          // Select the elements to be animated inside the active slide
+          var $animatingElems = $(e.relatedTarget)
+            .find("[data-animation ^= 'animated']");
+          doAnimations($animatingElems);
+        });
+});
+function change_scroll_height(){
+        scroll = $('.event-post').height()+10;
+        max = $('.event-posts-wrapper').height() - $('.event-posts').height();
+        change_events_div();
+        $('.gallery-wrapper').css('height',$('.gallery-wrapper').width());
+        
+        if($(window).width()<600){
+                $(".ann-post").css('width',$('#ann-outside').width());
+                ann_ctr = $("#ann-outside").width();
+        } else {
+                ann_ctr = 400;
+        }
+        numOfPosts = $(".ann-post").length;
+        
+}
+
+function change_events_div(){
+        if($(window).width()<756){
+                $("#news-event-div").removeClass("row-eq-height");
+                $(".div-events").css("height","350px");  
+        } else {
+                $("#news-event-div").addClass("row-eq-height");
+                $(".div-events").css("height","auto"); 
+        }
+}
+
+function change_announcements_div(){
+
+}
+        
+</script>
+</body>
+</html>
